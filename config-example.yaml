@@ -1,0 +1,19 @@
+declarante:
+  nif: '123456789'
+  sf: '3212'
+
+beneficiario:
+  - nome: 'Booking.com'
+    nif: '710671563'
+    nif_estr: '805734958B01'
+    pais: '528'
+  - nome: 'Airbnb'
+    nif: '712026681'
+    nif_estr: '9827384L'
+    pais: '372'
+
+declaracao:
+  tipo: '1'
+  tipo_rend: '08'
+  tributacao: '02'
+

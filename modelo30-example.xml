@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<Modelo30 xmlns="http://www.dgci.gov.pt/2002/OT" xsi="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="http://www.dgci.gov.pt/2002/OT Modelo30.xsd">
+	<Declarante>123456789</Declarante>
+	<Ano>2023</Ano>
+	<SF>3212</SF>
+	<Tipo>1</Tipo>
+	<Mes>4</Mes>
+	<Registo numero="1">
+		<Beneficiario>712026681</Beneficiario>
+		<NIFEstrangeiro>9827384L</NIFEstrangeiro>
+		<Pais>372</Pais>
+		<TipoRend>08</TipoRend>
+		<Rendimento>247.5</Rendimento>
+		<Tributacao>02</Tributacao>
+	</Registo>
+	<Registo numero="2">
+		<Beneficiario>710671563</Beneficiario>
+		<NIFEstrangeiro>805734958B01</NIFEstrangeiro>
+		<Pais>528</Pais>
+		<TipoRend>08</TipoRend>
+		<Rendimento>78.3</Rendimento>
+		<Tributacao>02</Tributacao>
+	</Registo>
+</Modelo30>
