@@ -83,8 +83,8 @@ def generate_modelo_30(data_frame, nif, date, serv_fin, decl_type, config, xml_f
   
     modelo30 = decl.createElement('Modelo30')
     modelo30.setAttributeNS("", "xmlns", "http://www.dgci.gov.pt/2002/OT")
-    modelo30.setAttributeNS("xmlns", "xsi", "http://www.w3.org/2001/XMLSchema-instance")
-    modelo30.setAttributeNS("xmlns", "schemaLocation", "http://www.dgci.gov.pt/2002/OT Modelo30.xsd")
+    #modelo30.setAttributeNS("xmlns", "xsi", "http://www.w3.org/2001/XMLSchema-instance")
+    #modelo30.setAttributeNS("xmlns", "schemaLocation", "http://www.dgci.gov.pt/2002/OT Modelo30.xsd")
 
     decl.appendChild(modelo30)
     
@@ -114,6 +114,11 @@ def generate_modelo_30(data_frame, nif, date, serv_fin, decl_type, config, xml_f
     mes = decl.createElement('Mes')
     mes.appendChild(decl.createTextNode(str(dt.month)))
     modelo30.appendChild(mes)
+
+    # Entradas com retenção:
+    # TODO handle these as well
+    retidas = decl.createElement('Retidas')
+    modelo30.appendChild(retidas)
 
     # Registos dos rendimentos:
 
