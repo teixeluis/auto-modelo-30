@@ -3,7 +3,7 @@
 ## Descrição
 
 Ferramenta de geração da declaração Modelo 30 da Autoridade Tributária com base ficheiro XLSX 
-exportado pelo Talkguest.
+exportado do Talkguest.
 
 
 
@@ -24,7 +24,7 @@ $ pip install xlsx2csv pandas PyYAML
 
 ## Configuração
 
-A aplicação espera um ficheiro config.yaml na sua directoria, com a seguinte estrutura:
+A aplicação espera um ficheiro config.yaml na mesma directoria, com a seguinte estrutura:
 
 ```
 declarante:
@@ -52,6 +52,30 @@ Nele devem constar os detalhes do declarante, bem como os beneficiários (entiti
 dentro da união europeia dos quais adquire bens ou serviços), assim como as características
 da declaração a aplicar em cada montante declarado. Estes valores devem estar consoante
 a informação correcta para o caso do contribuinte.
+
+## Utilização
+
+A aplicação é executada a partir da linha de comandos, e a sua sintaxe é:
+
+```
+$ python3 generate_modelo30.py <ficheiro excel do Talkguest> <ficheiro XML Modelo 30> <data inicio declaração> <data fim declaração>
+```
+
+Por exemplo se quisermos gerar a declaração do mês de Abril de 2023:
+
+```
+$ python3 generate_modelo30.py lista_reservas.xlsx modelo30_230959709.xml '2023-04-01' '2023-04-30'
+```
+
+Para obter o ficheiro de reservas exportado do Talkguest, é necessario ir à secção  Reservas > Lista de Reservas na aplicação
+Talkguest, e do lado superior direito da página, clicar em Ações > Exportar Reservas. Daí resultará o download do
+ficheiro utilizado nesta aplicação.
+
+**Nota:** O ficheiro xml da declaração deve sempre ser validado através da aplicação da autoridade 
+tributária, que pode ser obtida aqui:
+
+[https://oa.portaldasfinancas.gov.pt/mod30/downloads]([https://oa.portaldasfinancas.gov.pt/mod30/downloads])
+
 
 ## Limitações
 

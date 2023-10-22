@@ -20,7 +20,6 @@ def process_csv(file, config, start_date, end_date):
     orig = pandas.read_csv(file)
 
     relevant_columns = orig.filter(items=['Reservado em', 'Canal', 'Comissão Canal'], axis=1)
-    #relevant_columns['Reservado em'] = pandas.to_datetime(relevant_columns['Reservado em'], format='%d-%m-%Y')
     relevant_columns['Reservado em'] = pandas.to_datetime(relevant_columns['Reservado em'], format='mixed')
 
     # Registos por reserva com comissões para parceiros intracomunitários:
