@@ -6,9 +6,9 @@ Ferramenta de geração da declaração Modelo 30 da Autoridade Tributária com 
 exportado do Talkguest.
 
 
-
 ## Requisitos
 
+ * Conta Talkguest com módulo de facturação;
  * Python 3.10.6 ou superior;
  * Python PIP 22.0.2 ou superior;
  * Pacotes adicionais (ver abaixo).
@@ -71,11 +71,17 @@ Para obter o ficheiro de reservas exportado do Talkguest, é necessario ir à se
 Talkguest, e do lado superior direito da página, clicar em Ações > Exportar Reservas. Daí resultará o download do
 ficheiro utilizado nesta aplicação.
 
+Da execução da ferramenta resultam dois ficheiros, o ficheiro .xml contendo a declaração e o ficheiro zip correspondente,
+de modo a que possa ser directamente submetido no formulário do Modelo 30 no Portal das Finanças.
+
 **Nota:** O ficheiro xml da declaração deve sempre ser validado através da aplicação da autoridade 
 tributária, que pode ser obtida aqui:
 
 [https://oa.portaldasfinancas.gov.pt/mod30/downloads]([https://oa.portaldasfinancas.gov.pt/mod30/downloads])
 
+Depois de validado, o ficheiro pode ser submetido navegando até ao Portal das Finanças ([https://oa.portaldasfinancas.gov.pt/mod30/] https://oa.portaldasfinancas.gov.pt/mod30/)
+e em Modelo 30 > Enviar Ficheiro, proceder ao envio do ficheiro, indicando o mês e ano da declaração, bem como
+a localização do ficheiro.
 
 ## Limitações
 
