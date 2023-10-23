@@ -83,7 +83,7 @@ tributária, que pode ser obtida aqui:
 
 [https://oa.portaldasfinancas.gov.pt/mod30/downloads]([https://oa.portaldasfinancas.gov.pt/mod30/downloads])
 
-Depois de validado, o ficheiro pode ser submetido navegando até ao Portal das Finanças ([https://oa.portaldasfinancas.gov.pt/mod30/] https://oa.portaldasfinancas.gov.pt/mod30/)
+Depois de validado, o ficheiro pode ser submetido navegando até ao Portal das Finanças ( [https://oa.portaldasfinancas.gov.pt/mod30/] https://oa.portaldasfinancas.gov.pt/mod30/ )
 e em Modelo 30 > Enviar Ficheiro, proceder ao envio do ficheiro, indicando o mês e ano da declaração, bem como
 a localização do ficheiro.
 
