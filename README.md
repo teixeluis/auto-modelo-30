@@ -67,7 +67,11 @@ Por exemplo se quisermos gerar a declaração do mês de Abril de 2023:
 $ python3 generate_modelo30.py lista_reservas.xlsx modelo30_230959709.xml '2023-04-01' '2023-04-30'
 ```
 
-Para obter o ficheiro de reservas exportado do Talkguest, é necessario ir à secção  Reservas > Lista de Reservas na aplicação
+Deve ser indicado o ficheiro de entrada, que corresponde à grelha Excel (ficheiro XLSX) com a listagem de reservas, bem como 
+o nome a dar ao ficheiro de saída que será gerado por esta ferramenta. Por fim deve também ser indicado o intervalo de datas
+que corresponde ao período a que respeita a declaração a ser gerada.
+
+Para obter o ficheiro de reservas exportado do Talkguest, é necessario ir à secção  Reservas > Lista de Reservas na sua conta
 Talkguest, e do lado superior direito da página, clicar em Ações > Exportar Reservas. Daí resultará o download do
 ficheiro utilizado nesta aplicação.
 
