@@ -83,4 +83,4 @@ tributária, que pode ser obtida aqui:
    o contribuinte tem a prestação / aquisição de serviços intracomunitários habilitada
    para a sua actividade, e em que todas as as operações intracomunitárias consistam na liquidação
    de comissões. Quaisquer outros registos que devam constar da declaração, devem ser
-   introduzidos manualmente pelo cliente.
+   introduzidos manualmente pelo contribuinte.
