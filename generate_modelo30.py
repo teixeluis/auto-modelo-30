@@ -20,11 +20,10 @@ def process_csv(file, config, start_date, end_date):
     orig = pandas.read_csv(file)
 
     relevant_columns = orig.filter(items=['Reservado em', 'Canal', 'Comissão Canal'], axis=1)
-    relevant_columns['Reservado em'] = pandas.to_datetime(relevant_columns['Reservado em'], format='mixed')
+    #relevant_columns['Reservado em'] = pandas.to_datetime(relevant_columns['Reservado em'], format='mixed')
+    relevant_columns['Reservado em'] = pandas.to_datetime(relevant_columns['Reservado em'], format='%d-%m-%Y')
 
     # Registos por reserva com comissões para parceiros intracomunitários:
-    
-    # TODO obtain partners from the reference data
     
     beneficiarios = []
 
@@ -192,7 +191,6 @@ def main():
 
     data_frame = process_csv(TEMP_CSV, config, args.start_date, args.end_date)
 
-    # TODO Add these values to the reference data:
     generate_modelo_30(data_frame, config.get('declarante').get('nif'), args.start_date, config.get('declarante').get('sf'), config.get('declaracao').get('tipo'), config, args.modelo_30_file)
 
     with zipfile.ZipFile(args.modelo_30_file.replace('.xml', '.zip'), 'w') as myzip:
